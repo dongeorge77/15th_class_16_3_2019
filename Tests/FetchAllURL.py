@@ -13,6 +13,7 @@ broken_link=[]
 correct_link=[]
 
 for i in element:
+
     if(requests.head(i.get_attribute("href")) !=200):
         broken_link.append(i.get_attribute("href"))
 
